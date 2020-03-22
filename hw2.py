@@ -45,7 +45,7 @@ def countries_with_no_deaths_count(date: datetime.date):
     return dfD.loc[dfC[format_date(date)]>0].loc[dfD[format_date(date)]==0].count()[1]
 
 def more_cured_than_deaths_indices(date: datetime.date) -> List[int]:
-    """
+    """ 
     Returns table indices of areas (countries, region, provinces) in the data set
     with more cured cases than deaths on a given date. (DO NOT GROUP BY)
     Ex.
