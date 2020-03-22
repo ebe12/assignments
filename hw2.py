@@ -23,7 +23,7 @@ dfR = pd.read_csv(url, error_bad_lines=False)
 def format_date(date: datetime.date):
     if os.name == "nt":
         return date.strftime('%#m/%#d/%y')
-    else: 
+    else:  
         return date.strftime('%-m/%-d/%y') 
 
 
