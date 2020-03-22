@@ -18,7 +18,7 @@ url = f"https://raw.githubusercontent.com/CSSEGISandData/COVID-19/a9f182afe873ce
       f"/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv"
 dfR = pd.read_csv(url, error_bad_lines=False)
 
-
+ 
 # Helper function (strftime not cross platform) ???
 def format_date(date: datetime.date):
     if os.name == "nt":
