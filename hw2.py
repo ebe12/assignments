@@ -40,9 +40,9 @@ def countries_with_no_deaths_count(date: datetime.date) -> int:
     :return: Number of countries with no deaths but with active cases on a given date as an integer
     """
     
-    # Your code goes here
-    pass
-
+   
+def countries_with_no_deaths_count(date: datetime.date):
+    return dfD.loc[dfC[format_date(date)]>0].loc[dfD[format_date(date)]==0].count()[1]
 
 def more_cured_than_deaths_indices(date: datetime.date) -> List[int]:
     """
